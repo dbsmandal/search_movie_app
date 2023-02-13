@@ -47,7 +47,10 @@ function App() {
 
   return (
     <div className="main">
-      <input type="search" value={search} onChange={handleSearch} />
+      <h1>Search your favorite movies</h1>
+      <div className="input_box">
+      <input type="search" value={search} onChange={handleSearch}  />
+      </div>
       <Result movie={movie} />
     </div>
   );
