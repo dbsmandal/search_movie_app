@@ -2,8 +2,6 @@ import React from 'react'
 
 const MovieDetails = (props) => {
 
-
-
 const data=props.movieDetails;
 const {original_title,overview,release_date,runtime,poster_path}=data;
 
