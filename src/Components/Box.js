@@ -2,16 +2,21 @@ import React from 'react';
 import "./box.css"
 const Box = (props) => {
   const IMGPATH = "https://image.tmdb.org/t/p/w1280";
-
+  console.log(props)
   return (
     <>
-        <div className='movie_box'>
-          <img src={IMGPATH + props.image} alt="movie-poster" className='posters' />
-          <div className='movie_data'>
-            <span className='title'>{props.title}</span>
-            <span className='rating'>{props.rating}</span>
-          </div>
+      <div class="card">
+        <img src={IMGPATH + props.image} alt="" />
+        <div class="descriptions">
+          <h1>{props.title}</h1>
+          <h3>overview: {props.overview}</h3>
+          <p>Rating: {props.rating}</p>
+          <button>
+            <i class="fab fa-youtube"></i>
+            Play trailer on YouTube
+          </button>
         </div>
+      </div>
     </>
 
   )
