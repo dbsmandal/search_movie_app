@@ -23,7 +23,7 @@ const VideoTrailer = (props) => {
                                 height: '400px',
                                 playerVars: {
                                     autoplay: 1,
-                                    controls: 0,
+                                    controls: 1,
                                     cc_load_policy: 0,
                                     fs: 0,
                                     iv_load_policy: 0,
@@ -34,10 +34,6 @@ const VideoTrailer = (props) => {
                             }
                         }
                     />
-
-                    {/* <button>Play Trailer</button>
-                    <button>Stop Trailer</button> */}
-
                 </div>
 
                 <div className="movie_content">
