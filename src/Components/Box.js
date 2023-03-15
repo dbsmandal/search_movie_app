@@ -2,17 +2,16 @@ import React from 'react';
 import "./box.css"
 const Box = (props) => {
   const IMGPATH = "https://image.tmdb.org/t/p/w1280";
-  console.log(props)
   return (
     <>
-      <div class="card">
+      <div className="card">
         <img src={IMGPATH + props.image} alt="" />
-        <div class="descriptions">
+        <div className="descriptions">
           <h1>{props.title}</h1>
+          <h3>Rating: {props.rating}</h3>
           <h3>overview: {props.overview}</h3>
-          <p>Rating: {props.rating}</p>
           <button>
-            <i class="fab fa-youtube"></i>
+            <i className="fab fa-youtube"></i>
             Play trailer on YouTube
           </button>
         </div>
